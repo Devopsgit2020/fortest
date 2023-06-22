@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('BUZZ BUZZ') {
+    stage('BUZZ BUILD') {
       steps {
-        echo 'Step 1'
+        sh './jenkins/build.sh'
       }
     }
 
