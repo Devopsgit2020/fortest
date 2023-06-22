@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('BUZZ BUILD') {
       steps {
-        git pull
+        sh 'git pull'
         sh "chmod +x -R ${env.WORKSPACE}"
         sh './build.sh'
       }
