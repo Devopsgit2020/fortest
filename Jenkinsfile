@@ -7,6 +7,7 @@ pipeline {
         sh 'git pull'
         sh "chmod +x -R ${env.WORKSPACE}"
         sh './build.sh'
+        archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true)
       }
     }
 
