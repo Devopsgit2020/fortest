@@ -11,6 +11,7 @@ pipeline {
 
     stage('Buzz test') {
       steps {
+        sh 'sleep 5'
         sh './test-all.sh'
       }
     }
