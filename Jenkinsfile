@@ -9,5 +9,11 @@ pipeline {
       }
     }
 
+    stage('Buzz test') {
+      steps {
+        sh './test-all.sh'
+      }
+    }
+
   }
 }
