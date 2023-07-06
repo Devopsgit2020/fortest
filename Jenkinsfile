@@ -18,5 +18,11 @@ pipeline {
       }
     }
 
+    stage('test') {
+      steps {
+        tool(name: 'jdk8', type: 'jdk8')
+      }
+    }
+
   }
 }
