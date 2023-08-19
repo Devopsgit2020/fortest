@@ -13,6 +13,7 @@ pipeline {
         echo 'Buzz, Bees, Buzz!'
         echo 'Bees Buzzing!'
         sh 'echo "yew yew"'
+        sh 'mv filetest.ttxt filetestt.txt'
       }
     }
 
