@@ -14,13 +14,7 @@ pipeline {
         echo 'Bees Buzzing!'
         sh 'echo "yew yew"'
         sh 'mv filetest.ttxt filetestt.txt'
-      }
-    }
-
-    stage('manual input') {
-      steps {
-        input(message: 'hi, input please', ok: 'go')
-        sh 'ping 172.20.10.3'
+        archiveArtifacts '*'
       }
     }
 
