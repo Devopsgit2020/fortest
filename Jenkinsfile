@@ -20,6 +20,7 @@ pipeline {
     stage('manual input') {
       steps {
         input(message: 'hi, input please', ok: 'go')
+        sh 'ping 172.20.10.3'
       }
     }
 
