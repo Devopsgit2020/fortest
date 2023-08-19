@@ -4,6 +4,7 @@ pipeline {
     stage('BUZZ BUZZ') {
       steps {
         echo 'Step 1'
+        sh 'touch filetest.ttxt'
       }
     }
 
