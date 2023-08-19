@@ -17,5 +17,11 @@ pipeline {
       }
     }
 
+    stage('manual input') {
+      steps {
+        input(message: 'hi, input please', ok: 'go')
+      }
+    }
+
   }
 }
