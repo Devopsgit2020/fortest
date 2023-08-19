@@ -14,7 +14,7 @@ pipeline {
         echo 'Bees Buzzing!'
         sh 'echo "yew yew"'
         sh 'mv filetest.ttxt filetestt.txt'
-        archiveArtifacts 'filetextt.txt'
+        archiveArtifacts 'filetestt.txt'
       }
     }
 
