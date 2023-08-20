@@ -16,7 +16,7 @@ pipeline {
 
     stage('Buzz test') {
       when {
-        branch 'simple-pipeline'
+        branch 'simple-pipelin'
       }
       steps {
         sh 'sleep 5'
