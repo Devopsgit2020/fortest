@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('BUZZ BUILD') {
       when {
-        environment name: 'name', value: 'yassin'
+        environment name: 'name', value: 'yassine'
       }
       steps {
         sh 'ping -c 5 192.168.1.87'
