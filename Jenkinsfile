@@ -17,6 +17,7 @@ pipeline {
     stage('Buzz test') {
       steps {
         sh 'sleep 5'
+        sh "chmod +x -R ${env.WORKSPACE}"
         sh './test-all.sh'
       }
     }
