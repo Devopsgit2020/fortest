@@ -15,6 +15,9 @@ pipeline {
     }
 
     stage('Buzz test') {
+      when {
+        branch 'simple-pipeline'
+      }
       steps {
         sh 'sleep 5'
         sh "chmod +x -R ${env.WORKSPACE}"
