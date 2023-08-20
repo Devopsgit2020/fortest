@@ -2,6 +2,9 @@ pipeline {
   agent any
   stages {
     stage('BUZZ BUILD') {
+      when {
+        environment name: 'name', value: 'yassin'
+      }
       steps {
         sh 'ping -c 5 192.168.1.87'
         sh 'git pull'
@@ -18,5 +21,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    name = 'yassine'
   }
 }
